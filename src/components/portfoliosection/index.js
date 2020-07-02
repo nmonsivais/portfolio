@@ -1,4 +1,5 @@
 import React from "react";
+import Project from "../project"
 
 function Portfolio() {
     return (
@@ -18,67 +19,23 @@ function Portfolio() {
                     {/* <!-- Portfolio Grid Items--> */}
                     <div class="row justify-content-center">
                         {/* <!-- Portfolio Items--> */}
-                        <div class="col-md-6 col-lg-4 mb-5">
-                            <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
-                                <div
-                                    class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                    <div class="portfolio-item-caption-content text-center text-white"><i
-                                        class="fas fa-plus fa-3x"></i></div>
-                                </div><img class="img-fluid" src="assets/img/witterexample.png"
-                                    alt="Witter Website Login Page" />
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 mb-5">
-                            <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                                <div
-                                    class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                    <div class="portfolio-item-caption-content text-center text-white"><i
-                                        class="fas fa-plus fa-3x"></i></div>
-                                </div><img class="img-fluid" src="assets/img/weatherapp.png" alt="Hurricane image" />
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 mb-5">
-                            <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                                <div
-                                    class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                    <div class="portfolio-item-caption-content text-center text-white"><i
-                                        class="fas fa-plus fa-3x"></i></div>
-                                </div><img class="img-fluid" src="assets/img/xonebrosblogs.png" alt="Image of a Blog" />
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 mb-5">
-                            <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-                                <div
-                                    class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                    <div class="portfolio-item-caption-content text-center text-white"><i
-                                        class="fas fa-plus fa-3x"></i></div>
-                                </div><img class="img-fluid" src="assets/img/monsiyoutubechannel.png"
-                                    alt="Mr Monsivais's YouTube Channel Art" />
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 mb-5">
-                            <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
-                                <div
-                                    class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                    <div class="portfolio-item-caption-content text-center text-white"><i
-                                        class="fas fa-plus fa-3x"></i></div>
-                                </div><img class="img-fluid" src="assets/img/coderefactoring.png"
-                                    alt="Image of computer code." />
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 mb-5">
-                            <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
-                                <div
-                                    class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                    <div class="portfolio-item-caption-content text-center text-white"><i
-                                        class="fas fa-plus fa-3x"></i></div>
-                                </div><img class="img-fluid" src="assets/img/libations.png"
-                                    alt="Image of the login page for a website called Libations." />
-                            </div>
-                        </div>
+
+                        <Project modal="#portfolioModal0" img="assets/img/witterexample.png" altText="Witter Website Login Page" />
+
+                        <Project modal="#portfolioModal1" img="assets/img/weatherapp.png" altText="Hurricane image" />
+
+                        <Project modal="#portfolioModal2" img="assets/img/xonebrosblogs.png" altText="Image of a Blog" />
+
+                        <Project modal="#portfolioModal3" img="assets/img/monsiyoutubechannel.png" altText="Mr Monsivais's YouTube Channel Art" />
+
+                        <Project modal="#portfolioModal4" img="assets/img/coderefactoring.png" altText="Image of computer code." />
+
+                        <Project modal="#portfolioModal5" img="assets/img/libations.png" altText="Image of the login page for a website called Libations." />
+
                     </div>
                 </div>
             </section>
+
             {/* <!-- Portfolio Modal--> */}
             <div class="portfolio-modal modal fade" id="portfolioModal0" tabindex="-1" role="dialog"
                 aria-labelledby="#portfolioModal0Label" aria-hidden="true">
